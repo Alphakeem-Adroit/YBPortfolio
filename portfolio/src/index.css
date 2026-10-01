@@ -1,87 +1,15 @@
 @import "tailwindcss";
 
-@layer utilities {
-    @keyframes prism-one {
-        0%,
-        100% {
-            transform: translate(0, 0) scale(1);
-        }
+@theme {
+  --color-blue: #3B82F6;
+  --color-white: #ffffff;
+  --color-off-white: #eeeeee;
+  --color-yellow: #FACC15;
+  --color-gray: #9CA3AF;
+  
+  --font-sans: 'Inter', sans-serif;
+}
 
-        25% {
-            transform: translate(20vw, 10vh) scale(1.15);
-        }
-
-        50% {
-            transform: translate(35vw, -10vh) scale(0.95);
-        }
-
-        75% {
-            transform: translate(10vw, 20vh) scale(1.1);
-        }
-    }
-
-    @keyframes prism-two {
-        0%,
-        100% {
-            transform: translate(0, 0) scale(1);
-        }
-
-        30% {
-            transform: translate(-20vw, -15vh) scale(1.1);
-        }
-
-        60% {
-            transform: translate(-35vw, 5vh) scale(0.9);
-        }
-
-        80% {
-            transform: translate(-10vw, -20vh) scale(1.15);
-        }
-    }
-
-    @keyframes prism-three {
-        0%,
-        100% {
-            transform: translate(0, 0) scale(1);
-        }
-
-        35% {
-            transform: translate(-20vw, 15vh) scale(1.2);
-        }
-
-        70% {
-            transform: translate(15vw, -20vh) scale(0.85);
-        }
-    }
-
-    @keyframes prism-four {
-        0%,
-        100% {
-            transform: translate(0, 0) scale(1);
-        }
-
-        40% {
-            transform: translate(25vw, -15vh) scale(1.15);
-        }
-
-        75% {
-            transform: translate(40vw, 5vh) scale(0.9);
-        }
-    }
-
-    .animate-prism-one {
-        animation: prism-one 22s ease-in-out infinite;
-    }
-
-    .animate-prism-two {
-        animation: prism-two 27s ease-in-out infinite;
-    }
-
-    .animate-prism-three {
-        animation: prism-three 24s ease-in-out infinite;
-    }
-
-    .animate-prism-four {
-        animation: prism-four 30s ease-in-out infinite;
-    }
+html {
+  scroll-behavior: smooth;
 }

@@ -1,9 +1,9 @@
-import DevelopmentPreview from "./components/DevelopmentPreview.jsx";
+import Portfolio from './components/Portfolio';
 
 function App() {
 
   return (
-    <DevelopmentPreview />
+    <Portfolio />
   );
 }
 
