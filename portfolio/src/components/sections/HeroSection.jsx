@@ -17,7 +17,7 @@ const columnImages = [
 
 const HeroSection = () => {
   return (
-    <div className="relative min-h-screen w-full bg-black overflow-hidden flex flex-col justify-between">
+    <header id="home" className="relative min-h-screen w-full bg-black overflow-hidden flex flex-col justify-between">
       
       {/* ================= BACKGROUND: ENDLESS SCROLLING IMAGE COLUMNS ================= */}
       <div className="absolute inset-0 grid grid-cols-2 md:grid-cols-4 gap-4 p-4 pointer-events-none opacity-40 z-0">
@@ -125,7 +125,7 @@ const HeroSection = () => {
         </motion.div>
 
       </div>
-    </div>
+    </header>
   );
 };
 
