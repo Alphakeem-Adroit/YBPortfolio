@@ -75,7 +75,7 @@ const HeroSection = () => {
         >
           {/* Headline with Custom Spans */}
           <h1 className="font-inter font-bold text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.1] tracking-tight drop-shadow-md">
-            <span className="text-yellow">Design</span> that helps brands <span className="text-blue">stand out.</span>
+            <span className="text-yellow">Designs</span> that help brands <span className="text-blue">stand out.</span>
           </h1>
 
           {/* Description */}
