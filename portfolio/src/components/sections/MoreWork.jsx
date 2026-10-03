@@ -88,16 +88,16 @@ const MoreWork = () => {
       className="relative isolate scroll-mt-28 overflow-hidden bg-black px-6 py-16 font-inter sm:px-8 sm:py-20 md:px-10 lg:px-8 lg:py-28"
     >
       {/* Black gradient */}
-      <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-br from-black via-black/90 to-zinc-950" />
+      <div className="pointer-events-none absolute inset-0 -z-10 bg-linear-to-br from-black via-black/90 to-zinc-950" />
 
       {/* Yellow glow */}
-      <div className="pointer-events-none absolute -left-40 top-20 -z-10 h-80 w-80 rounded-full bg-yellow-400/10 blur-[100px] sm:h-[450px] sm:w-[450px]" />
+      <div className="pointer-events-none absolute -left-40 top-20 -z-10 h-80 w-80 rounded-full bg-yellow-400/10 blur-[100px] sm:h-112.5 sm:w-112.5" />
 
       {/* Blue glow */}
-      <div className="pointer-events-none absolute -right-40 bottom-0 -z-10 h-96 w-96 rounded-full bg-blue-500/20 blur-[120px] sm:h-[550px] sm:w-[550px]" />
+      <div className="pointer-events-none absolute -right-40 bottom-0 -z-10 h-96 w-96 rounded-full bg-blue-500/20 blur-[120px] sm:h-137.5 sm:w-137.5" />
 
       {/* Subtle colour overlay */}
-      <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-tr from-yellow-400/5 via-transparent to-blue-500/10" />
+      <div className="pointer-events-none absolute inset-0 -z-10 bg-linear-to-tr from-yellow-400/5 via-transparent to-blue-500/10" />
 
       <div className="mx-auto w-full max-w-7xl">
         <div className="mb-10 sm:mb-12 lg:mb-16">

@@ -32,11 +32,11 @@ const HeroSection = () => {
                 ease: "linear"
               }}
             >
-              {/* Double the array to ensure seamless infinite looping */}
+              {/* Doubling the array to ensure seamless infinite looping */}
               {[...col, ...col].map((imgSrc, imgIndex) => (
                 <div
                   key={imgIndex}
-                  className="w-full h-48 sm:h-64 rounded-2xl border border-white/20 overflow-hidden bg-zinc-900 shadow-lg flex-shrink-0"
+                  className="w-full h-48 sm:h-64 rounded-2xl border border-white/20 overflow-hidden bg-zinc-900 shadow-lg shrink-0"
                 >
                   <img
                     src={typeof imgSrc === 'function' ? imgSrc() : imgSrc}
@@ -52,11 +52,11 @@ const HeroSection = () => {
 
       {/* ================= GRADIENT OVERLAYS ================= */}
       {/* 1. Black Gradient (Biggest at Top Left) */}
-      <div className="absolute top-0 left-0 w-full md:w-3/4 h-full bg-gradient-to-br from-black via-black/80 to-transparent z-10 pointer-events-none" />
+      <div className="absolute top-0 left-0 w-full md:w-3/4 h-full bg-linear-to-br from-black via-black/80 to-transparent z-10 pointer-events-none" />
 
       {/* 2. Yellow & Blue Accents covering the rest stylishly */}
-      <div className="absolute inset-0 bg-gradient-to-tr from-[#FACC15]/15 via-transparent to-[#3B82F6]/20 mix-blend-screen z-10 pointer-events-none" />
-      <div className="absolute bottom-0 right-0 w-full md:w-1/2 h-1/2 bg-gradient-to-tl from-[#3B82F6]/25 via-transparent to-transparent z-10 pointer-events-none" />
+      <div className="absolute inset-0 bg-linear-to-tr from-yellow/15 via-transparent to-blue/20 mix-blend-screen z-10 pointer-events-none" />
+      <div className="absolute bottom-0 right-0 w-full md:w-1/2 h-1/2 bg-linear-to-tl from-blue/25 via-transparent to-transparent z-10 pointer-events-none" />
 
       {/* ================= NAVBAR COMPONENT ================= */}
       <div className="relative z-30">
@@ -92,13 +92,15 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto pt-2">
             <a
               href="#work"
-              className="px-8 py-4 bg-white text-black font-bold text-sm tracking-wider rounded-2xl shadow-xl hover:bg-zinc-200 transition-all text-center transform hover:scale-105"
+              className="px-8 py-4 bg-white text-black font-bold text-sm tracking-wider rounded-full shadow-xl hover:bg-zinc-200 transition-all text-center transform hover:scale-105"
             >
               EXPLORE MY WORK
             </a>
             <a
-              href="#contact"
-              className="px-8 py-4 bg-[#3B82F6] text-black font-bold text-sm tracking-wider rounded-2xl shadow-xl hover:bg-blue-600 hover:text-white transition-all text-center transform hover:scale-105 flex items-center justify-center gap-2"
+              href="https://wa.me/2348101785839"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 bg-blue text-black font-bold text-sm tracking-wider rounded-full shadow-xl hover:bg-blue-600 hover:text-white transition-all text-center transform hover:scale-105 flex items-center justify-center gap-2"
             >
               <span>START A PROJECT</span>
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -115,7 +117,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           className="w-full lg:w-2/5 flex items-center justify-center"
         >
-          <div className="relative w-full max-w-[260px] sm:max-w-[320px] md:max-w-[360px] lg:max-w-[380px] overflow-hidden group">
+          <div className="relative w-full max-w-65 sm:max-w-[320px] md:max-w-90 lg:max-w-95 overflow-hidden group">
             <img
               src={hero3d}
               alt="3D Liquid"

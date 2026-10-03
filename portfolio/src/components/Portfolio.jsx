@@ -4,6 +4,7 @@ import MoreWork from './sections/MoreWork';
 import About from './sections/About';
 import Process from './sections/Process';
 import Testimonial from './sections/Testimonial';
+import Footer from './sections/Footer';
 
 const Portfolio = () => {
   return (
@@ -14,6 +15,7 @@ const Portfolio = () => {
         <About />
         <Process />
         <Testimonial />
+        <Footer />
     </main>
   )
 }

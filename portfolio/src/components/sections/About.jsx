@@ -22,12 +22,12 @@ const About = () => {
         <div className="grid grid-cols-1 items-center gap-8 sm:gap-10 md:grid-cols-[minmax(0,1fr)_minmax(0,1.5fr)] lg:gap-16">
           {/* Profile image */}
           <div className="flex justify-center md:justify-start">
-            <div className="w-full max-w-[280px] rounded-[2rem] border border-zinc-200 bg-zinc-50 p-3 sm:max-w-[340px] lg:max-w-[400px] lg:p-4">
+            <div className="w-full max-w-70 rounded-4xl border border-zinc-200 bg-zinc-50 p-3 sm:max-w-85 lg:max-w-100 lg:p-4">
               <img
                 src={profilePic}
                 alt="Yusuf Busoyriy, brand designer and design coach"
                 loading="lazy"
-                className="aspect-[4/5] w-full rounded-[1.5rem] object-cover object-top"
+                className="aspect-4/5 w-full rounded-3xl object-cover object-top"
               />
             </div>
           </div>
